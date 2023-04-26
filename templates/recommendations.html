@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Recommendation System</title>
+    <style>
+        table {
+           
+     
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Spotify Recommendation System</h1>
+    <h2>Recommendations for "{{ song_name }}"</h2>
+    <table>
+        <tr>
+            <th>Artist</th>
+            <th>Song</th>
+        </tr>
+        {% for index, row in recommendations.iterrows() %}
+            <tr>
+                <td>{{ row['artists'] }}</td>
+                <td>{{ row['song'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+    <br><br>
+
+    <a href="{{url_for('home')}}"><button>Back</button></a>
+</body>
+</html>
+
+
+

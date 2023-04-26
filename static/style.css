@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("{{url_for('static',filename='image.png')}}");
+    min-height: 100vh;
+    background-size: cover;
+    color: #242424;
+    margin: 0;
+    padding: 0;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 30%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 2px solid #4D4D4D;
+  }
+
+  input[type="submit"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #242424;
+    color:#f0fafa;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #FAF8F0;
+    color: #242424;
+  }
+
+  @media only screen and (max-width: 600px) {
+    h3 {
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: 80%;
+      margin-bottom: 0.5rem;
+    }
+
+    input[type="submit"] {
+      width: 80%;
+    }
+  }
