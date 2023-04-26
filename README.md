@@ -1,7 +1,7 @@
-##Understanding the Dataset
+**Understanding the Dataset.
 #Let’s understand the dataset. In this dataset, we have 15 columns: acousticness, danceability, duration_ms, energy, instrumentalness, key, liveness, loudness, mode, speechiness, tempo, time_signature, valence, target, song_title, artist.
 
-#Acosticness confidence measure from 0.0 to 1.0 of whether the track is acoustic.
+***Acosticness confidence measure from 0.0 to 1.0 of whether the track is acoustic.
 #Danceability measure describes how suitable a track is for dancing.
 #duration_ms is the duration of the song track in milliseconds.
 #Energy represents a perceptual measure of intensity and activity.
